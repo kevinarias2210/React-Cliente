@@ -3,11 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {Header} from './componentes/container/header/Header'
+import {Nav} from './componentes/container/nav/Nav'
+import {Section} from './componentes/container/section/Section'
+import {Aside} from './componentes/container/aside/Aside'
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+    <Header />
+    <Nav /> 
+    <Section />
+    <Aside />
   </React.StrictMode>
 );
 
