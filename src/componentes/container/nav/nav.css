@@ -1,0 +1,69 @@
+.nav{
+    width: 100%;
+}
+
+.nav__container--color{
+    width: 100%;
+    height: 28vh;
+    position: absolute;
+    background-color: #ff302ead;
+    z-index: 2;
+}
+
+.nav__container--carro{
+    width: 100%;
+}
+
+
+.nav__container--latonero{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 24%;
+    z-index: 3;
+}
+
+.nav__container--person{
+    display: flex;
+    justify-content: center;
+}
+
+.nav__container--tio{
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 5px 10px 20px 0px;
+}
+
+.nav__container--nombre{
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    color: white;
+    text-shadow: 0px 2px #000000c4;
+}
+
+.nav__navegation{
+    width: 100%;
+    margin: 32px 0;
+}
+
+.nav__navegation--botton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__navegation--boton{
+    margin: 0 5px;
+    background-color: #FF5D25;
+    border: none;
+    padding: 7px;
+    color: white;
+    font-size: 11px;
+    box-shadow: 2px 5px 13px 0px black;
+}

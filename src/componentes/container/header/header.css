@@ -1,0 +1,11 @@
+.header{
+    width: 100%;
+}
+
+.header__container{
+    margin: 20px;
+}
+
+.header__container--img{
+    width: 100%;
+}

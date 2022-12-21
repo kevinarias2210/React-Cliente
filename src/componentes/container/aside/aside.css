@@ -1,0 +1,32 @@
+.aside{
+    width: 100%;
+}
+
+.aside__container{
+    margin: 0 5px;
+}
+
+.aside__container2--title{
+    margin: 0 5px;
+}
+
+.aside__container--h2{
+    background-color: #FF302E;
+    padding: 10px;
+    width: 40%;
+    color: white;
+    box-shadow: 7px 5px 13px -2px black;
+}
+
+.aside__container--p{
+    background-color: #FF5D25;
+    padding: 10px;
+    width: 93%;
+    color: white;
+}
+
+.aside__container2--Galery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin: 0 5px;
+}
