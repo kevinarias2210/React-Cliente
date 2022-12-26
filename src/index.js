@@ -7,6 +7,7 @@ import {Header} from './componentes/container/header/Header'
 import {Nav} from './componentes/container/nav/Nav'
 import {Section} from './componentes/container/section/Section'
 import {Aside} from './componentes/container/aside/Aside'
+import {SectionContacto} from './componentes/container/sectionContacto/SectionContacto'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,6 +18,7 @@ root.render(
     <Nav /> 
     <Section />
     <Aside />
+    <SectionContacto />
   </React.StrictMode>
 );
 

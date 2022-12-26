@@ -1,14 +1,20 @@
 import React from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { FreeMode } from "swiper";
+import Tarjetas from "./card/Tarjetas";
+import 'swiper/css';
+import 'swiper/css/free-mode';
 import './aside.css';
-import carro1 from "./img/1.jpeg";
-import carro2 from "./img/2.jpeg";
-import carro3 from "./img/3.jpeg";
-import carro4 from "./img/4.jpeg";
-import carro5 from "./img/5.jpeg";
-import carro6 from "./img/6.jpeg";
-import carro7 from "./img/7.jpeg";
-import carro8 from "./img/8.jpeg";
-import carro9 from "./img/9.jpeg";
+//Import de imgs
+import img1 from "./img/1.jpeg";
+import img2 from './img/2.jpeg';
+import img3 from './img/3.jpeg';
+import img4 from './img/4.jpeg';
+import img5 from './img/5.jpeg';
+import img6 from './img/6.jpeg';
+import img7 from './img/7.jpeg';
+import img8 from './img/8.jpeg';
+import img9 from './img/9.jpeg';
 
 export function Aside(){
     return(
@@ -23,34 +29,63 @@ export function Aside(){
                 <div className="aside__container2--title">
                     <h2 className="aside__container--h2">Mi trabajo</h2>
                 </div>
-                <div className="aside__container2--Galery">
-                    <a href="#image1">
-                        <img className="aside__container2--img" src={carro1} alt="carro" />
-                    </a>
-                    <a href="#image2">
-                        <img className="aside__container2--img" src={carro2} alt="carro" />
-                    </a>
-                    <a href="#image3">
-                        <img className="aside__container2--img" src={carro3} alt="carro" />
-                    </a>
-                    <a href="#image4">
-                        <img className="aside__container2--img" src={carro4} alt="carro" />
-                    </a>
-                    <a href="#image5">
-                        <img className="aside__container2--img" src={carro5} alt="carro" />
-                    </a>
-                    <a href="#image6">
-                        <img className="aside__container2--img" src={carro6} alt="carro" />
-                    </a>
-                    <a href="#image7">
-                        <img className="aside__container2--img" src={carro7} alt="carro" />
-                    </a>
-                    <a href="#image8">
-                        <img className="aside__container2--img" src={carro8} alt="carro" />
-                    </a>
-                    <a href="#image9">
-                        <img className="aside__container2--img" src={carro9} alt="carro" />
-                    </a>
+                <div className="aside__container--photo">
+                    <Swiper 
+                        freeMode={true}
+                        grabCursor={true}
+                        modules={[FreeMode]}
+                        className="mySwiper"
+                        breakpoints={{
+                            0:{
+                                slidesPerView: 1,
+                                spaceBetween: 10
+                            },
+                            480:{
+                                slidesPerView: 2,
+                                spaceBetween: 10
+                            },
+                            768:{
+                                slidesPerView: 3,
+                                spaceBetween: 15
+                            },
+                            1024:{
+                                slidesPerView: 4,
+                                spaceBetween: 15
+                            },
+                            1280:{
+                                slidesPerView: 5,
+                                spaceBetween: 30
+                            },
+                        }}
+                    >
+                        <SwiperSlide>
+                            <Tarjetas data={{imgSrc: img1}} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Tarjetas data={{imgSrc: img2}} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Tarjetas data={{imgSrc: img3}} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Tarjetas data={{imgSrc: img4}} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Tarjetas data={{imgSrc: img5}} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Tarjetas data={{imgSrc: img6}} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Tarjetas data={{imgSrc: img7}} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Tarjetas data={{imgSrc: img8}} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Tarjetas data={{imgSrc: img9}} />
+                        </SwiperSlide>
+                    </Swiper>
                 </div>
             </div>
         </aside>

@@ -6,7 +6,7 @@ export function Header(){
     return(
         <header className="header">
             <div className="header__container">
-                <img className="header__container--img" src={logo} alt=""/>
+                <img className="header__container--img" src={logo} alt="Logo de Auto Worker"/>
             </div>
         </header> 
     )
