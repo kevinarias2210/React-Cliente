@@ -33,7 +33,7 @@ export function SectionContacto () {
                     </button>
                     <button className="section2__container--pays">
                         <img src={daviplata} alt="" />
-                        Envíalo por daviplata
+                        Paga por daviplata
                     </button>
                 </div>
             </div>

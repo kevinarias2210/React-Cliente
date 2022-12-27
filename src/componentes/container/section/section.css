@@ -1,4 +1,10 @@
+.section__container{
+    display: flex;
+    justify-content: center;
+}
+
 iframe{
-    width: 310px;
+    width: 100%;
+    height: 70vmin;
     margin: 0 5px;
 }

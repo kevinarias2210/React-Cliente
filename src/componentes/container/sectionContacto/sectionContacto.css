@@ -25,6 +25,7 @@
     padding: 10px;
     background-color: #ff5b25ea;
     border: 0 solid;
+    outline-color: #FF302E;
 }
 
 .section2__container--name::placeholder{
@@ -36,6 +37,7 @@
     padding: 50px 0;
     background-color: #ff5b25ea;
     border: 0 solid;
+    outline-color: #FF302E;
 }
 
 .section2__container--problema::placeholder{
