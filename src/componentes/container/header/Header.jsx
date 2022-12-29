@@ -4,7 +4,7 @@ import logo from "./img/logo_2.png";
 
 export function Header(){
     return(
-        <header className="header">
+        <header id="headers" className="header">
             <div className="header__container">
                 <img className="header__container--img" src={logo} alt="Logo de Auto Worker"/>
             </div>

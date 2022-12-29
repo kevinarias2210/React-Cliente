@@ -20,7 +20,7 @@ export function Aside(){
     return(
         <aside className="aside">
             <div className="aside__container">
-                <h2 className="aside__container--h2">Mi perfil</h2>
+                <h2 id="asides" className="aside__container--h2">Mi perfil</h2>
                 <p className="aside__container--p">Ofrezco servicio de latoneria, reparo todo lo relacionado con colisiones golpes y 
                     abolladuras, también ofrecemos servicio de pintura con los mejores materiales que hay en el mercado, ofrezco 
                     servicio a domicilio para que el cliente no se quede sin carro. Con 30 años de experiencia.</p>

@@ -8,7 +8,7 @@ import {Nav} from './componentes/container/nav/Nav'
 import {Section} from './componentes/container/section/Section'
 import {Aside} from './componentes/container/aside/Aside'
 import {SectionContacto} from './componentes/container/sectionContacto/SectionContacto'
-
+import {Home} from './componentes/container/casa/Home'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,6 +19,7 @@ root.render(
     <Section />
     <Aside />
     <SectionContacto />
+    <Home />
   </React.StrictMode>
 );
 
