@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Proyecto del Cliente real
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+En este proyecto hay que realizar una aplicacion web que sea funcional y dinamico para un cliente que es independiente, en la que
+podamos mejorar su economia e implementarlo directamente al mundo de la tecnologia.
 
-## Available Scripts
+## Extructura de carpetas
 
-In the project directory, you can run:
+En esta estructura vamos a ver el flujo de componentes en la que están enlazados entre si, porque si un componente falta, la aplicacion
+no va a quedar funcional y va a agarrar errores de importaciones o el tipico TypeError.
 
-### `npm start`
+Normalmente los componentes se guardan en la carpeta *src* y dentro de eso va la carpeta componentes y container ahí va ir toda la logica, estilos, imagenes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+*Empezamos primero con el header:*
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-En esta carpeta solo va a tener el html, una imagen que es el logo y estilos.
 
-### `npm test`
+*nav:*
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-En el nav va a tener la estructura de html, estilos css, se importan unas imagenes y una libreria de "react-scroll" o linkeo scroll, que lo que hace es que permite que cuando se de el botón click, se dirija a la seccion de la pagina indicada.
+La forma en que podemos utilizarlo, es llamar el componente "link" que reemplaza la etiqueta "a" y "to" por el "href", en el "to" está enlazado con un id del elemento html que va a ir y la propiedad offset permite darle la ubicacion especifica en movimiento.
 
-### `npm run build`
+*section:*
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-En el primer section es igual que el header, pero a excepcion que va a contener un video del trabajo del cliente, por el momento hay una cancion para sustituirlo momentaneamente.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+*aside:*
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-En este aside va a contener el la estructura html, css, imagenes del trabajo del cliente en su proceso. Se importa una libreria de scroll llamada "react-swiper", que permite que ya tenga animacion, que el usuario haga scroll horizontales. El responsivo está directamente importado con el brekpoint, donde se coloca el tamaño de la pantalla cerrando entrecorchetes l, el sliders es como la prioridades que va a tener o así yo lo entendí.
 
-### `npm run eject`
+-En esta carpeta tambien está el componente card, importa una libreria de bootstrap que permite que las tarjetas de cada imagen tenga su estilo. Tambien va a guardar la data de las imagenes.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+*sectionContacto:*
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-En esta carpeta se utiliza un hook useState, para validar los estados que están en el los formularios y en el boton de enviar a whatsapp y nequi. Primero en los formularios donde su estado futuro se va a guardar en un objeto, en la funcion de "changeText" va a guardar en array llamado form que cada vez que obtienen del target el valor y el name se va a guardar ahí, en los imputs se nombra, con el atributo "name" y se utiliza la funcion "OnChange" para que esa sea su estado presente.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+-Ahora en el boton de whatsapp: Va a tener una funcion llamada "sendWhatsapp" pasando una condicional y ahi hay otra condicional de encadenamiento gracias al "?", está diciendo que si form tiene la propiedad name y texto entonces ejecuta. Adentro contiene el let del numero del cliente y la url donde va a tener los datos del form del nombre y el texto y la ventana que cada vez que se de click se abra.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+-En el boton de nequi es un popUp, que en el state va a pasar como valor falso, y que en su funcion que cada vez que se de click va a ser true.
 
-## Learn More
+-En este componente va a tener otro componente que va a tener la libreria llamado "headlessui/react" que es la logica del popUp, entonces acá solo seguí la documentacion de npm.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+*home:*
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-En este componente va a contener la flecha que regresa al home, traté de llamar la carpeta en ingles, pero me mandaba para otro lado, se demoraba en renderizar y fue un lio y si me asuste, pero lo solucioné. Pero en este tiene la misma logica del nav.
