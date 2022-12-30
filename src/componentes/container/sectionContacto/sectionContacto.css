@@ -1,0 +1,110 @@
+.section2{
+    width: 100%;
+}
+
+.section2__container{
+    margin: 30px 5px;
+}
+
+.aside__container--h2{
+    font-size: 7vmin;
+}
+
+.section2__container--problem{
+    width: 50%;
+    padding: 10px;
+    color: white;
+    font-size: 4vmin;
+    background-color: #FF5D25;
+    box-shadow: 7px 5px 13px -2px black;
+}
+
+.section2__container--name{
+    width: 50%;
+    margin: 30px 0;
+    padding: 10px;
+    background-color: #ff5b25ea;
+    border: 0 solid;
+    outline-color: #FF302E;
+    font-size: 4vmin;
+}
+
+.section2__container--name::placeholder{
+    color: white;
+}
+
+.section2__container--problema{
+    width: 100%;
+    padding: 50px 0;
+    background-color: #ff5b25ea;
+    border: 0 solid;
+    outline-color: #FF302E;
+    font-size: 4vmin;
+}
+
+.section2__container--problema::placeholder{
+    color: white;
+    text-align: center;
+}
+
+.section2__container--btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.section2__container--bton{
+    margin: 15px 0;
+    padding: 10px 0;
+    border: none;
+    background-color: #FF302E;
+    color: white;
+    font-size: 5vmin;
+    box-shadow: 7px 5px 13px -2px black;
+}
+
+.section2__container--bton img{
+    width: 15%;
+    margin-right: 15px;
+}
+
+.section2__container--pays{
+    width: 78%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    padding: 10px 0;
+    border: none;
+    background-color: #FF302E;
+    color: white;
+    box-shadow: 7px 5px 13px -2px black;
+}
+
+.section2__container--pays img{
+    width: 15%;
+    margin-right: 15px;
+}
+
+.section2__container--pays p{
+    margin-top: 15px;
+    font-size: 5vmin;
+}
+
+@media only screen and (min-width: 1024px){
+    .section2{
+        margin: 50px;
+    }
+    .section2__container--problema{
+        width: 90%;
+    }
+
+    .section2__container--pays{
+        width: 39%;
+    }
+
+    .section2__container--pays img{
+        width: 13%;
+    }
+}
