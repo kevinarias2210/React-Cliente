@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import './sectionContacto.css';
 import whatsapp from './img/whatsapp.png';
 import nequi from './img/nequi.png';
+import Modal from "./pop/Modal";
 
 export function SectionContacto () {
     const [form, setForm] = useState({});
+    const [isOpen, setIsOpen] = useState(false);
 
     const sendWhatsapp = () => {
         if (form?.name && form?.text) {
@@ -13,8 +15,12 @@ export function SectionContacto () {
             window.open(url);   
         }
     }
-
+    
     const changeText = e => setForm({ ...form, [e.target.name]: e.target.value });
+
+    const openModal = () => {
+        setIsOpen(true)
+    }
 
     return(
         <section className="section2">
@@ -33,12 +39,13 @@ export function SectionContacto () {
                 </div>
                 <h2 className="aside__container--h2">Puntos de pago</h2>
                 <div className="section2__container--btns">
-                    <button className="section2__container--pays">
-                        <img src={nequi} alt="imagen de nequi" />
-                        Paga con nequi
+                    <button className="section2__container--pays" onClick={openModal}>
+                        <img id="nequi" src={nequi} alt="imagen de nequi"/>
+                        <p id="pagar">Paga con nequi</p>    
                     </button>
                 </div>
             </div>
+            <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
         </section>
     )
 }
