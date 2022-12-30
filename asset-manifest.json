@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/React-Cliente/static/css/main.f4a99989.css",
+    "main.js": "/React-Cliente/static/js/main.3082eb3e.js",
+    "static/js/787.70e5f5d0.chunk.js": "/React-Cliente/static/js/787.70e5f5d0.chunk.js",
+    "static/media/carro.jpg": "/React-Cliente/static/media/carro.450ea520509c885f92cf.jpg",
+    "static/media/logo_2.png": "/React-Cliente/static/media/logo_2.5c174063ae68e4ce17cf.png",
+    "static/media/5.jpeg": "/React-Cliente/static/media/5.a01ebc015897a97b31ea.jpeg",
+    "static/media/6.jpeg": "/React-Cliente/static/media/6.aeb28b5f32df967c6ebd.jpeg",
+    "static/media/2.jpeg": "/React-Cliente/static/media/2.8b0d70fbf5c51d32acf8.jpeg",
+    "static/media/4.jpeg": "/React-Cliente/static/media/4.cfdf08ccecf57518700a.jpeg",
+    "static/media/3.jpeg": "/React-Cliente/static/media/3.158456cf6f36fd913b10.jpeg",
+    "static/media/7.jpeg": "/React-Cliente/static/media/7.0a549619cb6313dfb7cd.jpeg",
+    "static/media/8.jpeg": "/React-Cliente/static/media/8.65a4b6f6f45eef72498a.jpeg",
+    "static/media/9.jpeg": "/React-Cliente/static/media/9.fa94d875db865b117c39.jpeg",
+    "static/media/latonero.jpeg": "/React-Cliente/static/media/latonero.e10eb9a3c8f387432dfe.jpeg",
+    "static/media/1.jpeg": "/React-Cliente/static/media/1.51eb2586d1b3548bd3e4.jpeg",
+    "index.html": "/React-Cliente/index.html",
+    "main.f4a99989.css.map": "/React-Cliente/static/css/main.f4a99989.css.map",
+    "main.3082eb3e.js.map": "/React-Cliente/static/js/main.3082eb3e.js.map",
+    "787.70e5f5d0.chunk.js.map": "/React-Cliente/static/js/787.70e5f5d0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4a99989.css",
+    "static/js/main.3082eb3e.js"
+  ]
+}
