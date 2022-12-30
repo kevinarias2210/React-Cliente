@@ -91,3 +91,20 @@
     margin-top: 15px;
     font-size: 5vmin;
 }
+
+@media only screen and (min-width: 1024px){
+    .section2{
+        margin: 50px;
+    }
+    .section2__container--problema{
+        width: 90%;
+    }
+
+    .section2__container--pays{
+        width: 39%;
+    }
+
+    .section2__container--pays img{
+        width: 13%;
+    }
+}

@@ -14,8 +14,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-    <Header />
-    <Nav /> 
+    <div className='contenedorGeneral'>
+      <Header />
+      <Nav /> 
+    </div>
     <Section />
     <Aside />
     <SectionContacto />

@@ -8,7 +8,7 @@
 .section3__btnHome{
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
 }
 
 .section3__btnHome--img{
@@ -17,4 +17,14 @@
     border-radius: 50%;
     background-color: #FF302E;
     box-shadow: 0px 3px 15px 0px black;
+}
+
+@media only screen and (min-width: 1024px){
+    .section3{
+        top: 115%;
+        left: 84%;
+    }
+    .section3__btnHome{
+        width: 33%;
+    }
 }
