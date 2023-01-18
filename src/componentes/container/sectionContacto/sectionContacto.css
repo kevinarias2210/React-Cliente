@@ -1,12 +1,12 @@
 .section2{
-    width: 100%;
+    width: 95%;
 }
 
 .section2__container{
     margin: 30px 5px;
 }
 
-.aside__container--h2{
+.section2__container--h2{
     font-size: 7vmin;
 }
 
@@ -92,19 +92,46 @@
     font-size: 5vmin;
 }
 
+.section2__container--number{
+    margin: 20px;
+}
+.section2__container--number p{
+    font-size: 10vmin;
+}
+
+
 @media only screen and (min-width: 1024px){
     .section2{
-        margin: 50px;
+        margin: 50px 15px;
+        display: flex;
+        justify-content: center;
+    }
+    .section2__container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section2__container--form{
+        margin-top: 40px;
     }
     .section2__container--problema{
         width: 90%;
     }
 
+    .section2
+
     .section2__container--pays{
-        width: 39%;
+        width: 77%;
     }
 
     .section2__container--pays img{
         width: 13%;
+    }
+    .section2__container--number{
+
+    }
+    .section2__container--number p{
+
     }
 }

@@ -18,16 +18,16 @@ export function SectionContacto () {
     
     const changeText = e => setForm({ ...form, [e.target.name]: e.target.value });
 
-    const openModal = () => {
+    /* const openModal = () => {
         setIsOpen(true)
-    }
+    } */
 
     return(
         <section className="section2">
             <div className="section2__container">
                 <h2 id="contact" className="aside__container--h2">Contactame</h2>
                 <div className="section2__container--form">
-                    <h2 className="section2__container--problem">Tipo de problema</h2>
+                    <h2 className="section2__container--problem">Cuentanos tu problema</h2>
                     <input name="name" className="section2__container--name" type="text" placeholder="Ingresa tu nombre" onChange={changeText} /> 
                     <input name="text" className="section2__container--problema" type="text" placeholder="Ingresa el tipo de problema de tu carro" onChange={changeText} /> 
                 </div>
@@ -37,12 +37,15 @@ export function SectionContacto () {
                         Envíalo por whatsapp
                     </button>
                 </div>
-                <h2 className="aside__container--h2">Puntos de pago</h2>
+                <h2 className="section2__container--h2">Puntos de pago</h2>
                 <div className="section2__container--btns">
-                    <button className="section2__container--pays" onClick={openModal}>
+                    <div className="section2__container--pays" /* onClick={openModal} */>
                         <img id="nequi" src={nequi} alt="imagen de nequi"/>
                         <p id="pagar">Paga con nequi</p>    
-                    </button>
+                    </div>
+                    <div className="section2__container--number">
+                        <p>3044457342</p>
+                    </div>
                 </div>
             </div>
             <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
