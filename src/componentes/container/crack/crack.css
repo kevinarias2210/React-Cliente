@@ -1,0 +1,102 @@
+.car{
+    width: 100%;
+}
+
+.car__container--parte1{
+    height: 60vmin;
+    margin: 25px 0;
+}
+
+.car__container--contColor{
+    width: 100vmin;
+    height: 60vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.car__container--color{
+    width: 90vmin;
+    height: 60vmin;
+    border-radius: 40px;
+    background-color: #ff302ead;
+}
+
+.car__container--parte1 a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.car__container--img{
+    width: 90%;
+    height: 60vmin;
+    border-radius: 40px;
+    box-shadow: 1px 0px 15px -1px black;
+}
+
+.car__container--title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 3;
+    margin-left: 14vmin;
+    margin-top: 26vmin;
+}
+
+.car__container--h1{
+    font-size: 10vmin;
+    color: white;
+}
+
+@media only screen and (min-width: 1024px){ 
+    .car__container--parte1{
+        height: 50vmin;
+    }
+    
+    .car__container--contColor{
+        width: 170vmin;
+        height: 50vmin;
+    }
+    
+    .car__container--color{
+        height: 50vmin;
+    }
+
+    .car__container--img{
+        width: 52%;
+        height: 50vmin;
+        object-fit: cover;
+    }
+    
+    .car__container--title{
+        margin-left: 50vmin;
+        margin-top: 20vmin
+    }
+}
+
+@media only screen and (min-width: 1280px){ 
+    .car__container--parte1{
+        
+    }
+    
+    .car__container--contColor{
+        width: 160vmin;
+    }
+    
+    .car__container--color{
+        width: 84vmin;
+    }
+    
+    .car__container--img{
+        width: 52%;
+        height: 50vmin;
+        object-fit: cover;
+    }
+    
+    .car__container--title{
+        margin-left: 44vmin;
+    }
+}

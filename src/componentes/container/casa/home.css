@@ -8,7 +8,7 @@
 .section3__btnHome{
     position: fixed;
     width: 100%;
-    z-index: 3;
+    z-index: 4;
 }
 
 .section3__btnHome--img{

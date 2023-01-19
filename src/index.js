@@ -9,6 +9,7 @@ import {Section} from './componentes/container/section/Section'
 import {Aside} from './componentes/container/aside/Aside'
 import {SectionContacto} from './componentes/container/sectionContacto/SectionContacto'
 import {Home} from './componentes/container/casa/Home'
+import {Crack} from './componentes/container/crack/Crack'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,6 +23,7 @@ root.render(
     <Aside />
     <SectionContacto />
     <Home />
+    <Crack />
   </React.StrictMode>
 );
 
