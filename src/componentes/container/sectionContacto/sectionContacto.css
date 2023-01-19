@@ -69,6 +69,10 @@
     margin-right: 15px;
 }
 
+.section2__container--h2{
+    text-align: center;
+}
+
 .section2__container--pays{
     width: 78%;
     display: flex;
@@ -128,10 +132,10 @@
     .section2__container--pays img{
         width: 13%;
     }
-    .section2__container--number{
+   /*  .section2__container--number{
 
     }
     .section2__container--number p{
 
-    }
+    } */
 }
