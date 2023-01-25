@@ -25,7 +25,8 @@ export function Nav(){
                 <div className="nav__navegation--botton">
                     <Link to="asides" spy={true} smooth={true} offset={-20} duration={500} className="nav__navegation--boton">Mi perfil y mi trabajo</Link>
                     <Link to="contact" spy={true} smooth={true} offset={-150} duration={500} className="nav__navegation--boton" href="/">Contactame</Link>
-                    <a className="nav__navegation--boton" href="#aside">Califica mi trabajo</a>
+                    <Link to="cracks" spy={true} smooth={true} offset={-150} duration={500} className="nav__navegation--boton" href="/">Tipo de choque</Link>
+                    {/* <a className="nav__navegation--boton" href="#aside">Califica mi trabajo</a> */}
                 </div>
             </div>
         </nav>

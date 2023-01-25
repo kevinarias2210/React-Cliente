@@ -2,6 +2,10 @@
     width: 100%;
 }
 
+.car__container{
+    margin: 30px 5px;
+}
+
 .car__container--parte1{
     height: 60vmin;
     margin: 25px 0;
@@ -133,16 +137,16 @@
     }
     
     .car__container--title1{
-        margin-left: 10vmin;
-        margin-top: 0vmin;
+        margin-left: 4vmin;
+        margin-top: 24vmin;
     }
     .car__container--title2{
-        margin-left: 63vmin;
-        margin-top: 0vmin;
+        margin-left: 4vmin;
+        margin-top: 24vmin;
     }
     .car__container--title3{
-        margin-left: 115vmin;
-        margin-top: 0vmin;
+        margin-left: 4vmin;
+        margin-top: 23vmin;
     }
     .car__container--h1p{
         font-size: 5vmin;    
@@ -165,11 +169,11 @@
     }
     
     .car__container--contColor{
-        width: 58vmin;
+        width: 54vmin;
     }
     
     .car__container--color{
-        width: 70vmin;
+        width: 54vmin;
     }
     
     .car__container--img{
@@ -177,17 +181,18 @@
     }
     
     .car__container--title1{
-        margin-left: 21vmin;
-        margin-top: 0vmin;
+        margin-left: 7vmin;
+        margin-top: 23vmin;
     }
 
     .car__container--title2{
-        margin-left: 88vmin;
-        margin-top: 0vmin;
+        margin-left: 8vmin;
+        margin-top: 23vmin;
     }
 
     .car__container--title3{
-        margin-left: 156vmin;
+        margin-left: 9vmin;
+        margin-top: 23vmin;
     }
     
     .car__container--h1p{

@@ -7,7 +7,7 @@ import {Header} from './componentes/container/header/Header'
 import {Nav} from './componentes/container/nav/Nav'
 import {Section} from './componentes/container/section/Section'
 import {Aside} from './componentes/container/aside/Aside'
-import {SectionContacto} from './componentes/container/sectionContacto/SectionContacto'
+/* import {SectionContacto} from './componentes/container/sectionContacto/SectionContacto' */
 import {Home} from './componentes/container/casa/Home'
 import {Crack} from './componentes/container/crack/Crack'
 
@@ -21,7 +21,7 @@ root.render(
     </div>
     <Section />
     <Aside />
-    <SectionContacto />
+    {/* <SectionContacto /> */}
     <Home />
     <Crack />
   </React.StrictMode>
