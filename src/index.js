@@ -17,7 +17,7 @@ root.render(
     <App />
     <div className='contenedorGeneral'>
       <Header />
-      <Nav /> 
+      <Nav />
     </div>
     <Section />
     <Aside />
