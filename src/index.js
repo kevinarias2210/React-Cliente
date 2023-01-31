@@ -7,7 +7,8 @@ import {Header} from './componentes/container/header/Header'
 import {Nav} from './componentes/container/nav/Nav'
 import {Section} from './componentes/container/section/Section'
 import {Aside} from './componentes/container/aside/Aside'
-/* import {SectionContacto} from './componentes/container/sectionContacto/SectionContacto' */
+import { BrowserRouter, Routes, Route} from "react-router-dom";
+import {SectionContacto} from './componentes/container/sectionContacto/SectionContacto'
 import {Home} from './componentes/container/casa/Home'
 import {Crack} from './componentes/container/crack/Crack'
 
@@ -17,6 +18,11 @@ root.render(
     <App />
     <div className='contenedorGeneral'>
       <Header />
+      <BrowserRouter>
+        <Routes>
+          <Route path='/contact' element={<SectionContacto />}></Route>
+        </Routes>
+      </BrowserRouter>
       <Nav />
     </div>
     <Section />
