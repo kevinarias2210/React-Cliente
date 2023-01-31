@@ -8,7 +8,7 @@ import './index.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router>
+    <Router>{/*Router para que renderice toda la aplicacion y se pueda cambiar desde el inicio*/}
       <App />
     </Router>
   </React.StrictMode>

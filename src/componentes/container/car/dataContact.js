@@ -1,4 +1,4 @@
-const dataContact = [
+const dataContact = [//Informacion para que lo contacte, se guarda en un array almacenando los titulos y el tipo para despues ser reutilizables
   { title: 'Paragolpes trasero', type: 'back'},
   { title: 'Panel trasero', type: 'back'},
   { title: 'Tapa de baul', type: 'back'},

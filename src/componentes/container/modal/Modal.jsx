@@ -60,20 +60,20 @@ const EncabezadoModal = styled.div`
 
     h3{
         font-weight: 500;
-        font-size: 16px;
-        color: #1766DC;
+        font-size: 5vmin;
+        color: #FF302E;
     }
 `;
 
 const BotonCerrar = styled.div`
-    width: 15px;
+    width: 8vmin;
     height: 20px;
     border: none;
     border-radius: 5px;
-    color: #1766DC;
+    color: #FF302E;
     cursor: pointer;
     position: absolute;
-    top: 20px;
+    top: 9px;
     right: 30px;
     transition: .3 ease all;
 
