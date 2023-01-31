@@ -1,5 +1,4 @@
 import React from "react";
-import { Overlay } from "react-bootstrap";
 import styled from "styled-components";
 
 function Modal ({children, state, changeState, title}) {

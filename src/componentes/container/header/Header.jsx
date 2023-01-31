@@ -2,7 +2,7 @@ import React from "react";
 import './header.css';
 import logo from "./img/logo_2.png";
 
-export function Header(){
+export default function Header(){
     return(
         <header id="headers" className="header">
             <div className="header__container">

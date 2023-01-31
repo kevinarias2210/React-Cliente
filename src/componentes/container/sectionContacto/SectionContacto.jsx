@@ -4,7 +4,7 @@ import whatsapp from './img/whatsapp.png';
 import nequi from './img/nequi.png';
 import Modal from "./pop/Modal";
 
-export function SectionContacto () {
+export default function SectionContacto () {
     const [form, setForm] = useState({});
     const [isOpen, setIsOpen] = useState(false);
 
@@ -12,10 +12,10 @@ export function SectionContacto () {
         if (form?.name && form?.text) {
             let numero = 573044457342;
             let url = `https://wa.me/${numero}?text=Hola%20mi%20nombre%20es%20${form?.name}, mi tipo de problema con mi carro:%20${form?.text}`;
-            window.open(url);   
+            window.open(url);
         }
     }
-    
+
     const changeText = e => setForm({ ...form, [e.target.name]: e.target.value });
 
     /* const openModal = () => {

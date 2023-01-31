@@ -1,30 +1,18 @@
 import React from "react";
+import { dataContact } from './dataContact';
 import './front.css';
 
 export default function Back (){
+    const back = dataContact.filter(item => item.type === 'back');
     return(
         <div className="front">
             <div className="front__container">
-                <div className="front__container--golpes">
-                    <p className="front__container--p">Paragolpes trasero</p>
-                    <a className="front__container--a" href="/">Cotizar</a>
-                </div>
-                <div className="front__container--golpes">
-                    <p className="front__container--p">Panel trasero</p>
-                    <a className="front__container--a" href="/">Cotizar</a>
-                </div>
-                <div className="front__container--golpes">
-                    <p className="front__container--p">Tapa de baul</p>
-                    <a className="front__container--a" href="/">Cotizar</a>
-                </div>
-                <div className="front__container--golpes">
-                    <p className="front__container--p">Stop derecho</p>
-                    <a className="front__container--a" href="/">Cotizar</a>
-                </div>
-                <div className="front__container--golpes">
-                    <p className="front__container--p">Stop izquierdo</p>
-                    <a className="front__container--a" href="/">Cotizar</a>
-                </div>
+                {back.map((item, index) => (
+                    <div key={`backContact-${index.toString()}`} className="front__container--golpes">
+                        <p className="front__container--p">{item?.title || ''}</p>
+                        <a className="front__container--a" href="/contacto">Cotizar</a>
+                    </div>
+                ))}
             </div>
         </div>
     )

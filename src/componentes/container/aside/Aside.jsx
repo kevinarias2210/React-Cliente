@@ -18,7 +18,7 @@ import img9 from './img/9.jpeg';
 
 export function Aside(){
     return(
-        <aside className="aside">
+        <aside id="asides" className="aside">
             <div className="aside__container">
                 <h2 id="asides" className="aside__container--h2">Mi perfil</h2>
                 <p className="aside__container--p">Ofrezco servicio de latoneria, reparo todo lo relacionado con colisiones golpes y 

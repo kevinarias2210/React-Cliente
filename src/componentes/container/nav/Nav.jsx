@@ -1,11 +1,17 @@
 import React from "react";
-import { Link } from "react-scroll";
-import './nav.css';
-import { SectionContacto } from "../sectionContacto/SectionContacto";
+import { Link as LinkScroll } from "react-scroll";
+import { Link } from 'react-router-dom';
 import car from "./img/carro.jpg";
 import person from "./img/latonero.jpeg";
+import './nav.css';
 
-export function Nav(){
+export default function Nav(){
+    const urlPathname = window.location.pathname;
+    const urlPathSplit = urlPathname.split('/');
+
+    const isUrlContact = urlPathSplit[1] === 'contacto';
+
+    console.log(isUrlContact)
     return (
             <nav className="nav">
                 <div className="nav__container">
@@ -24,13 +30,28 @@ export function Nav(){
                 </div>
             <div className="nav__navegation">
                 <div className="nav__navegation--botton">
-                    <Link to="asides" spy={true} smooth={true} offset={-20} duration={500} className="nav__navegation--boton">Mi perfil y mi trabajo</Link>
-                    <Link to="contact" className="nav__navegation--boton">Contactame</Link>
-                    <Link to="cracks" spy={true} smooth={true} offset={-150} duration={500} className="nav__navegation--boton" href="/">Tipo de choque</Link>
-                    {/* <a className="nav__navegation--boton" href="#aside">Califica mi trabajo</a> */}
+                    {isUrlContact ? (
+                        <Link to="/" className="nav__navegation--boton">Home</Link>
+                    ) : (
+                        <LinkScroll to="asides" spy={true} smooth={true} offset={-20} duration={500} className="nav__navegation--boton">Mi perfil y mi trabajo</LinkScroll>
+                    )}
+                    <Link to="/contacto" className="nav__navegation--boton">Contactame</Link>
+                    {!isUrlContact && (
+                        <LinkScroll to="cracks" spy={true} smooth={true} offset={-150} duration={500} className="nav__navegation--boton" href="/">Tipo de choque</LinkScroll>
+                    )}
+                    {/*isUrlContact ? (
+                        <Link to="/#asides" className="nav__navegation--boton">Mi perfil y mi trabajo</Link>
+                    ) : (
+                        <LinkScroll to="asides" spy={true} smooth={true} offset={-20} duration={500} className="nav__navegation--boton">Mi perfil y mi trabajo</LinkScroll>
+                    )}
+                    <Link to="/contacto" className="nav__navegation--boton">Contactame</Link>
+                    {isUrlContact ? (
+                        <Link to="/#cracks" className="nav__navegation--boton">Tipo de choque</Link>
+                    ) : (
+                        <LinkScroll to="cracks" spy={true} smooth={true} offset={-150} duration={500} className="nav__navegation--boton" href="/">Tipo de choque</LinkScroll>
+                    ) */}
                 </div>
             </div>
-            <SectionContacto />
            {/*  console.log("hola"); */}
         </nav>
     )
