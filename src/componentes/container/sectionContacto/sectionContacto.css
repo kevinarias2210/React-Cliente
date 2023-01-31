@@ -6,6 +6,11 @@
     margin: 30px 5px;
 }
 
+.aside__container--h1{
+    font-size: 10vmin;
+    text-align: center;
+}
+
 .section2__container--h2{
     font-size: 7vmin;
 }
@@ -116,6 +121,11 @@
         flex-direction: column;
         align-items: center;
     }
+
+    .aside__container--h1{
+        text-align: initial;
+    }
+
     .section2__container--form{
         margin-top: 40px;
     }

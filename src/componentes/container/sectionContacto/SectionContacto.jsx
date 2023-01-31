@@ -25,6 +25,7 @@ export default function SectionContacto () {
     return(
         <section className="section2">
             <div className="section2__container">
+                <h1 className="aside__container--h1">Servicio en adomicilio</h1>
                 <h2 id="contact" className="aside__container--h2">Contactame</h2>
                 <div className="section2__container--form">
                     <h2 className="section2__container--problem">Cuentanos tu problema</h2>
