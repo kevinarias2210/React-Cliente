@@ -31,6 +31,7 @@ export function Nav(){
                 </div>
             </div>
             <SectionContacto />
+           {/*  console.log("hola"); */}
         </nav>
     )
 }
